@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!-- Primary Meta Tags -->
+            <title>MMEx Exchange Calculator</title>
+        <meta name="title" content="MMS Exchange ">
+        <meta name="description" content="Testing for My SWD mini project.......!!">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://mms-it.com/">
+        <meta property="og:title" content="MMS Exchange ">
+        <meta property="og:description" content="Testing for My SWD mini project.......!!">
+        <meta property="og:image" content="img/logo.png">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://mms-it.com/">
+        <meta property="twitter:title" content="MMS Exchange ">
+        <meta property="twitter:description" content="Testing for My SWD mini project.......!!">
+        <meta property="twitter:image" content="img/logo.png">
+
+
+
+
+    <link rel="icon" href="img/logo-shape-full.svg">
+    <!-- <title>MMEx Exchange Calculator</title> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/fontsawsone/css/all.css">
+    <!-- <link rel="stylesheet" href="vendor/animate_it/animate.css"> -->
+    <link rel="stylesheet" href="css/nightmod.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+<body class="night-mode">
+
+    <section class="app animate__animated animate__slideInDown">
+        <div class="output  ">
+            <div class="brand-continer">
+                <img src="img/logo-shape-full.svg" class="logo" alt="">
+                <h4 class="brand">MMEx</h4>
+            </div>
+            <div class="result-container">
+                 <p class="result" id="result">0.00</p>
+            </div>
+        </div>
+        <div class="divider  "></div>
+
+        <form class="calc     " id="calc">
+            <div class="input-container container">
+                <label>Input</label>
+                <input type="number" name="" class="input" id="input" placeholder="0.00" min="1" autofocus required>
+            </div>
+
+
+            <div class="from-container container">
+                <label>From</label>
+                <select id="from" class="from" required >
+                    <option value="" selected >Select Currency</option>
+                </select>
+            </div>
+
+
+            <div class="to-container container">
+                <label>To</label>
+                <select id="to" class="to" required></select>
+            </div>
+
+
+            <div class="calculate-container container">
+                <button id="calcBtn" class="calcBtn">Calculate</button>
+            </div>
+
+
+
+
+
+        </form>
+
+
+        <div class="history-container ">
+            <table class="history">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                
+                <tbody class="history-list" id="historyList">
+
+                </tbody>
+                <tfoot id="tfoot"></tfoot>
+            </table>
+        </div>
+
+        <button class="clear" id="clear" onclick="clearz()">Clear Data</button>  
+
+
+
+
+    </section>
+        <button class="mode-change animate__animated animate__slideInUp" onclick="changeMode()" >
+            <i class="fas fa-moon" id="modeIcon"></i>
+        </button>
+
+
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
